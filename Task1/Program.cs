@@ -15,4 +15,23 @@ int[] GetArray(int size)
     return res;
 }
 
+int[] array = GetArray(8);
 
+void Metod (int[] array) 
+{
+
+int Chet = 0;
+
+foreach(int el in array)
+{
+     if(el%2 == 0)
+     {
+        Chet = Chet +1;
+     }
+
+}
+Console.WriteLine();
+Console.WriteLine($"Четных чисел: {Chet}");
+}
+
+Metod(array);

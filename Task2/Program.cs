@@ -15,3 +15,21 @@ int[] GetArray(int size, int minValue, int maxValue)
     }
     return res;
 }
+
+int[] arr = GetArray(6, 0, 10);
+
+int SumOddNum(int[] array)
+{
+int sum = 0;
+for(int i = 0; i < arr.Length; i++)
+{
+    if (i%2 == 1)
+    {
+        sum = sum + array[i];
+    }
+}
+return sum;
+}
+
+Console.WriteLine();
+Console.WriteLine($"Сумма нечетных чисел: {SumOddNum(arr)}");
